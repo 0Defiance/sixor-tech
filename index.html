@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SIXOR-TECH | Solutions numériques innovantes</title>
+  <meta name="description" content="Nous accompagnons les entreprises, commerces et particuliers dans leur transformation digitale grâce à des solutions technologiques modernes et performantes.">
+  <meta property="og:title" content="SIXOR-TECH | Solutions numériques innovantes">
+  <meta property="og:description" content="Solutions numériques pour entreprises et particuliers — développement web & mobile, design, informatique.">
+  <meta property="og:image" content="images/logosixortech.png">
+  <link rel="icon" href="images/logosixortech.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5 CDN (autorisé par la spec) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container navbar">
+      <a href="#header" class="logo" aria-label="Accueil">
+        <img src="images/logosixortech.png" alt="SIXOR-TECH logo">
+      </a>
+      <nav>
+        <button class="burger" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          ☰
+        </button>
+        <div class="nav-links">
+          <a href="#header">Accueil</a>
+          <a href="#about">À propos</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div id="mobile-menu" class="mobile-menu" role="menu">
+          <a href="#header">Accueil</a><br>
+          <a href="#about">À propos</a><br>
+          <a href="#services">Services</a><br>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container hero-inner">
+        <span class="hero-strap">Agence digitale & développement</span>
+        <h1>SIXOR-TECH — Solutions numériques sur-mesure pour entreprises ambitieuses</h1>
+        <p class="hero-sub">Nous concevons des expériences digitales performantes : sites web, applications mobiles, design de marque et solutions IT pour accélérer votre croissance.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#services">Nos services</a>
+          <a class="btn btn-ghost" href="#about">Notre approche</a>
+          <a class="btn btn-ghost" href="#contact">Contactez-nous</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <h2>Qui sommes-nous ?</h2>
+        <p>SIXOR-TECH accompagne les entreprises, commerçants et entrepreneurs dans leur transformation digitale. Nous combinons design réfléchi, ingénierie robuste et stratégie digitale pour livrer des produits qui génèrent des résultats mesurables.</p>
+        <div class="values mt-1">
+          <div class="value">Innovation — idées neuves et technologies modernes</div>
+          <div class="value">Professionnalisme — processus clairs et livraison ponctuelle</div>
+          <div class="value">Qualité — code propre, UI soignée, expérience optimisée</div>
+          <div class="value">Satisfaction client — support et itérations basées sur vos retours</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="container">
+        <h2>Nos Services</h2>
+        <p>Services pensés pour des résultats concrets : visibilité accrue, outils métiers efficaces, et expériences utilisateur mémorables.</p>
+        <div class="services-grid mt-1">
+          <article class="service-card" aria-labelledby="s1">
+            <div class="service-icon">🖥️</div>
+            <h3 id="s1">Développement Web</h3>
+            <p>Sites vitrines, boutiques en ligne performantes et applications web sur-mesure, optimisés SEO et conversion.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s2">
+            <div class="service-icon">📱</div>
+            <h3 id="s2">Développement Mobile</h3>
+            <p>Applications natives et cross-platform, UX pensée pour l'utilisateur, intégrations API et maintenance.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s3">
+            <div class="service-icon">🎨</div>
+            <h3 id="s3">Design & Branding</h3>
+            <p>Identité visuelle, UI/UX design, prototypes interactifs et ressources graphiques cohérentes avec votre marque.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s4">
+            <div class="service-icon">🔧</div>
+            <h3 id="s4">Solutions Informatiques</h3>
+            <p>Audit, déploiement, sécurité et support IT pour garantir la continuité de vos activités.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="s5">
+            <div class="service-icon">📈</div>
+            <h3 id="s5">Marketing Digital</h3>
+            <p>Stratégie de contenu, publicité ciblée et optimisation des conversions pour augmenter votre visibilité.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container reveal">
+        <h2>Contactez-nous</h2>
+        <p>Prêt à démarrer ? Présentez votre projet et nous vous proposerons une solution adaptée et un devis transparent.</p>
+        <form id="contact-form" method="POST" action="https://formspree.io/f/your-id" aria-label="Formulaire de contact">
+          <div class="form-row two">
+            <input type="text" name="name" placeholder="Nom complet" required>
+            <input type="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-row two">
+            <input type="tel" name="phone" placeholder="Téléphone">
+            <input type="text" name="subject" placeholder="Sujet">
+          </div>
+          <div class="form-row">
+            <textarea name="message" rows="6" placeholder="Décrivez votre projet en quelques lignes" required></textarea>
+          </div>
+          <button type="submit">Envoyer la demande</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+
+        <div class="mt-1">
+          <p><strong>Adresse :</strong> 123 Rue Exemple, Ville, Pays</p>
+          <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
+          <p><strong>Email :</strong> contact@sixor-tech.example</p>
+          <div class="mt-1">
+            <!-- Google Maps embed (replace with actual embed if desired) -->
+            <iframe title="Carte SIXOR-TECH" src="https://www.google.com/maps/embed?pb=!1m18!" width="100%" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container text-center">
+    <img src="images/logosixortech.png" alt="SIXOR-TECH logo">
+      <nav class="mt-1">
+        <a href="#header">Accueil</a> · <a href="#services">Services</a> · <a href="#contact">Contact</a>
+      </nav>
+      <p class="mt-1">© 2026 SIXOR-TECH. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
