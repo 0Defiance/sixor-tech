@@ -98,6 +98,14 @@ button[type=submit] { background: linear-gradient(90deg, var(--color-accent), #f
 footer{ padding:2.2rem 0; background: #0f1720; color: #cfd8dc; }
 footer a{ color: var(--color-accent); text-decoration:none }
 
+/* Footer logo constraints to avoid overflow */
+footer img{ display:block; margin:0.6rem auto; height:56px; width:auto; max-width:180px }
+
+/* Hide large decorative hero logo on small screens to avoid layout issues */
+@media(max-width:1024px){
+  .hero-bg-logo{ display:none }
+}
+
 /* Reveal animations */
 .reveal{ opacity:0; transform: translateY(18px); transition: all .6s cubic-bezier(.2,.9,.2,1); }
 .reveal.in-view{ opacity:1; transform: none; }
