@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200" role="img" aria-label="Icone développement web">
+  <rect width="300" height="200" fill="none"/>
+  <rect x="50" y="40" width="200" height="120" rx="8" fill="#E8B000" opacity="0.1" stroke="#E8B000" stroke-width="2"/>
+  <circle cx="100" cy="80" r="8" fill="#E8B000" opacity="0.6"/>
+  <circle cx="150" cy="80" r="8" fill="#E8B000" opacity="0.6"/>
+  <circle cx="200" cy="80" r="8" fill="#E8B000" opacity="0.6"/>
+  <line x1="60" y1="120" x2="240" y2="120" stroke="#E8B000" stroke-width="2" opacity="0.4"/>
+  <line x1="60" y1="140" x2="200" y2="140" stroke="#E8B000" stroke-width="1.5" opacity="0.3"/>
+</svg>

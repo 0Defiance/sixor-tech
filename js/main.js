@@ -1,3 +1,34 @@
+// Theme toggle (dark/light mode with localStorage persistence)
+const themeToggle = document.getElementById('theme-toggle');
+const htmlElement = document.documentElement;
+
+// Load saved theme preference on page load
+function initTheme(){
+  const savedTheme = localStorage.getItem('theme') || 'light';
+  applyTheme(savedTheme);
+}
+
+function applyTheme(theme){
+  if(theme === 'dark'){
+    document.body.classList.add('dark-mode');
+    if(themeToggle) themeToggle.textContent = '☀️';
+  } else {
+    document.body.classList.remove('dark-mode');
+    if(themeToggle) themeToggle.textContent = '🌙';
+  }
+  localStorage.setItem('theme', theme);
+}
+
+if(themeToggle){
+  themeToggle.addEventListener('click', ()=>{
+    const isDark = document.body.classList.contains('dark-mode');
+    applyTheme(isDark ? 'light' : 'dark');
+  });
+}
+
+// Initialize theme on page load
+initTheme();
+
 // Menu burger toggle
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
