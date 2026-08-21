@@ -46,7 +46,7 @@
   <main>
     <section id="hero">
       <img class="hero-bg-logo" src="images/logosixortech.png" alt="" aria-hidden="true">
-      <div class="container hero-inner">
+      <div class="container hero-inner" src="images/logo.svg" alt="Logo SIXOR-TECH">
         <span class="hero-strap">Agence digitale & développement</span>
         <h1>SIXOR-TECH — Solutions numériques sur-mesure pour entreprises ambitieuses</h1>
         <p class="hero-sub">Nous concevons des expériences digitales performantes : sites web, applications mobiles, design de marque et solutions IT pour accélérer votre croissance.</p>
@@ -58,7 +58,7 @@
       </div>
     </section>
 
-    <section id="realisations">
+    <section id="realisations" class="section-divider">
       <div class="container reveal">
         <h2>Réalisations</h2>
         <p>Exemples de projets récents : sites vitrines, e-commerce, applications mobiles et identités visuelles.</p>
@@ -80,7 +80,7 @@
           </div>
 
           <div class="project-card" data-index="2">
-            <img src="images/project-placeholder-3.svg" alt="Projet 3 - Refonte de marque">
+            <img src="images/hero-illustration.svg" alt="Projet 3 - Refonte de marque">
             <div class="project-body">
               <h4>Refonte de marque & site vitrine</h4>
               <p>Nouvelle identité visuelle, guidelines et site responsive.</p>
@@ -92,7 +92,7 @@
 
     <!-- Réalisations moved below Services -->
 
-    <section id="about">
+    <section id="about" class="section-divider">
       <div class="container">
         <h2>Qui sommes-nous ?</h2>
         <p>SIXOR-TECH accompagne les entreprises, commerçants et entrepreneurs dans leur transformation digitale. Nous combinons design réfléchi, ingénierie robuste et stratégie digitale pour livrer des produits qui génèrent des résultats mesurables.</p>
@@ -105,7 +105,7 @@
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="section-divider">
       <div class="container">
         <h2>Nos Services</h2>
         <p>Services pensés pour des résultats concrets : visibilité accrue, outils métiers efficaces, et expériences utilisateur mémorables.</p>
@@ -143,33 +143,51 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section-divider">
       <div class="container reveal">
         <h2>Contactez-nous</h2>
         <p>Prêt à démarrer ? Présentez votre projet et nous vous proposerons une solution adaptée et un devis transparent.</p>
-        <form id="contact-form" method="POST" action="https://formspree.io/f/your-id" aria-label="Formulaire de contact">
-          <div class="form-row two">
-            <input type="text" name="name" placeholder="Nom complet" required>
-            <input type="email" name="email" placeholder="Email" required>
+        <div class="contact-layout">
+          <div class="contact-form-wrapper">
+            <form id="contact-form" method="POST" action="https://formspree.io/f/your-id" aria-label="Formulaire de contact">
+              <div class="form-row two">
+                <input type="text" name="name" placeholder="Nom complet" required>
+                <input type="email" name="email" placeholder="Email" required>
+              </div>
+              <div class="form-row two">
+                <input type="tel" name="phone" placeholder="Téléphone">
+                <input type="text" name="subject" placeholder="Sujet">
+              </div>
+              <div class="form-row">
+                <textarea name="message" rows="6" placeholder="Décrivez votre projet en quelques lignes" required></textarea>
+              </div>
+              <button type="submit">Envoyer la demande</button>
+              <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+            </form>
           </div>
-          <div class="form-row two">
-            <input type="tel" name="phone" placeholder="Téléphone">
-            <input type="text" name="subject" placeholder="Sujet">
-          </div>
-          <div class="form-row">
-            <textarea name="message" rows="6" placeholder="Décrivez votre projet en quelques lignes" required></textarea>
-          </div>
-          <button type="submit">Envoyer la demande</button>
-          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
-        </form>
 
-        <div class="mt-1">
-          <p><strong>Adresse :</strong> Cocody Saint-Viateur, Abidjan, Côte d'Ivoire</p>
-          <p><strong>Téléphone :</strong> +33 1 23 45 67 89</p>
-          <p><strong>Email :</strong> contact@sixor-tech.example</p>
-          <div class="mt-1">
-            <!-- Google Maps embed: using simple query embed to avoid invalid 'pb' parameter errors -->
-            <iframe title="Carte SIXOR-TECH" src="https://www.google.com/maps?q=Cocody%20Saint-Viateur%2C%20Abidjan&output=embed" width="100%" height="300" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact-info-wrapper">
+            <div class="contact-info">
+              <h3>Nous contacter</h3>
+              <div class="info-item">
+                <strong>📍 Adresse</strong>
+                <p>Cocody Saint-Viateur, Abidjan, Côte d'Ivoire</p>
+              </div>
+              <div class="info-item">
+                <strong>📞 Téléphone</strong>
+                <p><a href="tel:+2250123456789">+225 01 23 45 67 89</a></p>
+              </div>
+              <div class="info-item">
+                <strong>✉️ Email</strong>
+                <p><a href="mailto:contact@sixor-tech.example">contact@sixor-tech.example</a></p>
+              </div>
+              <div class="info-item">
+                <strong>🗺️ Localisation</strong>
+                <div style="border-radius: 10px; overflow: hidden; margin-top: 0.5rem;">
+                  <iframe title="Carte SIXOR-TECH" src="https://www.google.com/maps?q=Cocody%20Saint-Viateur%2C%20Abidjan&output=embed" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
